@@ -5,4 +5,6 @@ import java.util.List;
 
 public interface CoffeeService {
     List<CoffeeResponse> getCoffee();
+    CoffeeResponse getCoffeeById(Integer id);
+    List<CoffeeResponse> getCoffeeByName(String name);
 }
