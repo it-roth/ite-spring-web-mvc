@@ -1,6 +1,9 @@
 package co.istad.restapi.exception;
 
-public record FieldResponse(
+import lombok.Builder;
+
+@Builder
+public record FieldErrorResponse(
         String field,
         String message
 ) {
